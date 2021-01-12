@@ -18,7 +18,7 @@ Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i Enabl
   
 11. W NodeRed możesz zaimportować ten przepływ i przystosować go do własnych potrzeb.
 UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów
-
+```
 [
     {
         "id": "53a3349.6970ccc",
@@ -113,3 +113,4 @@ UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów
         "password": null
     }
 ]
+```
