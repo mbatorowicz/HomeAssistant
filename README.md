@@ -15,7 +15,7 @@ Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i rout
 9. Ponownie kliknij __+__ aby utworzyć kolejny filtr,
 10. w zakładce __General__ w polu __Chain__ wybierz _forward_, i resztę wykonaj jak w punktach 6, 7, 8.
   
-Zapamiętaj nr filtrów - są w kolumnie #.<br />
+Zapamiętaj nr filtrów - są w kolumnie #.\
 Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i __Enable__ (niebieski "ptaszek")
   
 11. W NodeRed możesz zaimportować poniższy przepływ i przystosować go do własnych potrzeb.\
