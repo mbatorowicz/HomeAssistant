@@ -17,7 +17,8 @@ Zapamiętaj nr filtrów - są w kolumnie #
 Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i Enable (niebieski "ptaszek")
   
 11. W NodeRed możesz zaimportować ten przepływ i przystosować go do własnych potrzeb.
-UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów
+UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów.
+12. Po zaimportowaniu w nodzie node-red-contrib-mikrotik dodaj w Device swój router.
 ```
 [
     {
