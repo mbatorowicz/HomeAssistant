@@ -2,23 +2,23 @@
 
 Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i routera Mikrotik.
 
-1. Zainstaluj w NodeRed: node-red-contrib-mikrotik
+1. Zainstaluj w NodeRed: __node-red-contrib-mikrotik__
 2. Zaloguj się do Mikrotik za pomocą WinBox
-3. kliknij IP > Firewall,
-4. w Filter Rules kliknij na + aby dodać nowy filtr,
-5. w zakładce General w polu Chain wybierz input,
-6. jeśli chcesz filtrować po IP to w Src. Address wpisz IP blokowanego urządzenia,
-7. jeśli chcesz filtrować po MAC (ja tak mam u siebie) to w zakładce Advanced Src. MAC Address wpisz interesujący cię MAC,
-8. w zakładce Action w polu Action wybierz drop i klikamy OK aby zatwierdzić filtr.
-9. Ponownie kliknij + aby utworzyć kolejny filtr,
-10. w zakładce General w polu Chain wybierz forward, i resztę wykonaj jak w punktach 6, 7, 8.
+3. kliknij __IP > Firewall__,
+4. w __Filter Rules__ kliknij na __+__ aby dodać nowy filtr,
+5. w zakładce __General__ w polu __Chain__ wybierz _input_,
+6. jeśli chcesz filtrować po IP to w __Src. Address__ wpisz IP blokowanego urządzenia,
+7. jeśli chcesz filtrować po MAC (ja tak mam u siebie) to w zakładce __Advanced Src.__ MAC Address wpisz interesujący cię MAC,
+8. w zakładce __Action__ w polu __Action__ wybierz _drop_ i kliknij OK aby zatwierdzić filtr.
+9. Ponownie kliknij __+__ aby utworzyć kolejny filtr,
+10. w zakładce __General__ w polu __Chain__ wybierz _forward_, i resztę wykonaj jak w punktach 6, 7, 8.
   
 Zapamiętaj nr filtrów - są w kolumnie #
-Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i Enable (niebieski "ptaszek")
+Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i __Enable__ (niebieski "ptaszek")
   
 11. W NodeRed możesz zaimportować ten przepływ i przystosować go do własnych potrzeb.
-UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów.
-12. Po zaimportowaniu w nodzie node-red-contrib-mikrotik dodaj w Device swój router.
+_**UWAGA**_, we fragmencie _"=numbers=12,13\"_ 12 i 13 zamień numerami swoich filtrów.
+12. Po zaimportowaniu przepływu w nodzie __node-red-contrib-mikrotik__ dodaj w __Device__ swój router.
 ```
 [
     {
