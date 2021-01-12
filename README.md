@@ -10,7 +10,7 @@ Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i rout
 4. w __Filter Rules__ kliknij na __+__ aby dodać nowy filtr,
 5. w zakładce __General__ w polu __Chain__ wybierz _input_,
 6. jeśli chcesz filtrować po IP to w __Src. Address__ wpisz IP blokowanego urządzenia,
-7. jeśli chcesz filtrować po MAC (ja tak mam u siebie) to w zakładce __Advanced Src.__ MAC Address wpisz interesujący cię MAC,
+7. jeśli chcesz filtrować po MAC (ja tak mam u siebie) to w zakładce __Advanced__ w polu __Src. MAC Address__ wpisz interesujący cię MAC,
 8. w zakładce __Action__ w polu __Action__ wybierz _drop_ i kliknij OK aby zatwierdzić filtr.
 9. Ponownie kliknij __+__ aby utworzyć kolejny filtr,
 10. w zakładce __General__ w polu __Chain__ wybierz _forward_, i resztę wykonaj jak w punktach 6, 7, 8.
@@ -18,7 +18,7 @@ Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i rout
 Zapamiętaj nr filtrów - są w kolumnie #
 Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i __Enable__ (niebieski "ptaszek")
   
-11. W NodeRed możesz zaimportować ten przepływ i przystosować go do własnych potrzeb.
+11. W NodeRed możesz zaimportować poniższy przepływ i przystosować go do własnych potrzeb.
 _**UWAGA**_, we fragmencie _"=numbers=12,13\"_ 12 i 13 zamień numerami swoich filtrów.
 12. Po zaimportowaniu przepływu w nodzie __node-red-contrib-mikrotik__ dodaj w __Device__ swój router.
 ```
