@@ -19,4 +19,97 @@ Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i Enabl
 11. W NodeRed możesz zaimportować ten przepływ i przystosować go do własnych potrzeb.
 UWAGA, we fragmencie "=numbers=12,13\" 12 i 13 zamień numerami swoich filtrów
 
-[{"id":"53a3349.6970ccc","type":"mikrotik","z":"f31031fd.61805","device":"dd10d61.b103c28","name":"","action":"9","command":"","command-type":"str","x":320,"y":300,"wires":[["ad815e1c.e674f"]]},{"id":"a6f2c7b3.c504f8","type":"inject","z":"f31031fd.61805","name":"Włącz net","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"[\"/ip/firewall/filter/disable\",\"=numbers=12,13\"]","payloadType":"json","x":120,"y":280,"wires":[["53a3349.6970ccc"]]},{"id":"ad815e1c.e674f","type":"debug","z":"f31031fd.61805","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":490,"y":300,"wires":[]},{"id":"4d620395.8a518c","type":"inject","z":"f31031fd.61805","name":"Wyłącz net","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"[\"/ip/firewall/filter/enable\",\"=numbers=12,13\"]","payloadType":"json","x":120,"y":320,"wires":[["53a3349.6970ccc"]]},{"id":"dd10d61.b103c28","type":"mikrotik-device","host":"192.168.1.1","port":"8728","username":null,"password":null}]
+[
+    {
+        "id": "53a3349.6970ccc",
+        "type": "mikrotik",
+        "z": "f31031fd.61805",
+        "device": "dd10d61.b103c28",
+        "name": "",
+        "action": "9",
+        "command": "",
+        "command-type": "str",
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "ad815e1c.e674f"
+            ]
+        ]
+    },
+    {
+        "id": "a6f2c7b3.c504f8",
+        "type": "inject",
+        "z": "f31031fd.61805",
+        "name": "Włącz net",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[\"/ip/firewall/filter/disable\",\"=numbers=12,13\"]",
+        "payloadType": "json",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "53a3349.6970ccc"
+            ]
+        ]
+    },
+    {
+        "id": "ad815e1c.e674f",
+        "type": "debug",
+        "z": "f31031fd.61805",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4d620395.8a518c",
+        "type": "inject",
+        "z": "f31031fd.61805",
+        "name": "Wyłącz net",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[\"/ip/firewall/filter/enable\",\"=numbers=12,13\"]",
+        "payloadType": "json",
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "53a3349.6970ccc"
+            ]
+        ]
+    },
+    {
+        "id": "dd10d61.b103c28",
+        "type": "mikrotik-device",
+        "host": "192.168.1.1",
+        "port": "8728",
+        "username": null,
+        "password": null
+    }
+]
