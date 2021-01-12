@@ -15,11 +15,11 @@ Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i rout
 9. Ponownie kliknij __+__ aby utworzyć kolejny filtr,
 10. w zakładce __General__ w polu __Chain__ wybierz _forward_, i resztę wykonaj jak w punktach 6, 7, 8.
   
-Zapamiętaj nr filtrów - są w kolumnie #
+Zapamiętaj nr filtrów - są w kolumnie #.__
 Możesz sprawdzić czy filtrowanie działa klikając na utworzone filtry i __Enable__ (niebieski "ptaszek")
   
 11. W NodeRed możesz zaimportować poniższy przepływ i przystosować go do własnych potrzeb.
-_**UWAGA**_, we fragmencie _"=numbers=12,13\"_ 12 i 13 zamień numerami swoich filtrów.
+_**UWAGA**_, we fragmencie _"=numbers=12,13\"_ 12 i 13 zastąp numerami swoich filtrów.
 12. Po zaimportowaniu przepływu w nodzie __node-red-contrib-mikrotik__ dodaj w __Device__ swój router.
 ```
 [
