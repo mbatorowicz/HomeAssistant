@@ -1,4 +1,6 @@
 # HomeAssistant
+## NodeRed, Mikrotik
+### Blokada internetu
 
 Blokowanie internetu na urządzeniach w sieci lokalnej za pomocą NodeRed i routera Mikrotik.
 
